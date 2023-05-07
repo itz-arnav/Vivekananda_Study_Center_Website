@@ -49,6 +49,23 @@ nav {
   padding: 10px;
   text-decoration: none;
   color: #000;
+  position: relative;
+}
+
+.nav-links>li>a:after {    
+  background: red repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.2rem;
+  position: absolute;
+  background: rgb(104, 85, 224);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-links>li>a:hover:after { 
+  width: 90%; 
+  left: 2%; 
 }
 
 .dropdown {
