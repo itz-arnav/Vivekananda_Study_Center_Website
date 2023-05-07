@@ -19,7 +19,7 @@ const Header = () => {
           <a href="/" className="dropdown">Courses v</a>
           <ul className="primary-dropdown">
             <li>
-              <a href="/">Boards</a>
+              <a href="/">Boards &gt;</a>
               <ul className="secondary-dropdown">
                 <li>
                   <a href="/">CBSE</a>
@@ -33,7 +33,7 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <a href="/">Competitive Exams</a>
+              <a href="/">Competitive Exams &gt;</a>
               <ul className="secondary-dropdown">
                 <li>
                   <a href="/">WBJEE</a>
