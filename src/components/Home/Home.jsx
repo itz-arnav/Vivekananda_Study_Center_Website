@@ -1,11 +1,13 @@
 import React from 'react'
+import Header from "../Header/Header";
 import Home_Carousal from './Home_Carousal';
+import Footer from "../Footer/Footer";
+
 const Home = () => {
   return (
     <div>
-      <h1>This is Home</h1>
-      <Home_Carousal/>
-
+      <Header />
+      <Footer />
     </div>
   )
 }
