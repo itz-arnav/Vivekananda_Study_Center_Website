@@ -1,0 +1,208 @@
+.footerContainer{
+    background-color: #333;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerContent{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Copyright Section */
+
+.copyrightSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.21rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.copyrightText{
+    color: #fff;
+    font-weight: 500;
+}
+
+.paymentSection{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.paymentSection img{
+    background-color: #fff;
+    width: 3.4rem;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.paymentSection img:hover{
+    transform: scale(1.1);
+}
+
+.footerHr{
+    color: #fff;
+    width: 100%;
+}
+
+
+/* Link Section */
+
+.linkSection{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 40% 15% 15% 30%;
+    gap: 0.5rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.companyDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.companyDetailsContainer{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.titleContainer{
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.companyDetailsNameIcon{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.titleIcon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.companyDetailsName{
+    font-size: 0.8rem;;
+}
+
+.companytitleName{
+    font-size: 1.5rem;
+}
+
+
+.AboutDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titleName{
+    padding-bottom: 0.8rem;
+    font-size: 1.15rem;
+}
+
+.footerLink{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.footerLink:hover{
+    color: rgb(104, 85, 224);;
+}
+
+
+.CategoryDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.normalText{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.emailSubmitSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5rem;
+    width: 90%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 1.5rem;
+}
+
+.emailMailIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.emailInputText{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: #000;
+}
+
+.emailbtn{
+    background-color: rgb(104, 85, 224);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2rem;
+}
+
+.emailIcon{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.emailbtn:hover{
+    transform: scale(1.1);
+}
+
+.socialIconSection{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.socialIconLogo{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.socialIconLogo:hover{
+    color: rgb(104, 85, 224);
+    transform: scale(1.2);
+}
