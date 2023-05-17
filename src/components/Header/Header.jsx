@@ -9,7 +9,7 @@ const Header = () => {
       <div className="headerContent">
       <div className="leftSection">
       <div className="imageSection">
-        <img src={Logo} alt="" srcset="" className="imageIcon"/>
+        <img src={Logo} alt="" className="imageIcon"/>
       </div>
       <ul className="nav-links">
         <li>
@@ -57,8 +57,8 @@ const Header = () => {
       </ul>
       </div>
       <div className="signupSection">
-      <button class="log">Login</button>
-    <button class="reg">Sign up</button>
+      <button className="log">Login</button>
+    <button className="reg">Sign up</button>
       </div>
       </div>
     </nav>
