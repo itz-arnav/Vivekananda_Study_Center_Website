@@ -114,7 +114,7 @@ nav {
 }
 
 .primary-dropdown>li:hover{
-  background-color: rgb(231, 231, 231);;
+  background-color: rgb(211, 211, 211);
 }
 
 .primary-dropdown li:hover > ul {
@@ -124,7 +124,6 @@ nav {
   left: 100%;
 }
 
-/* rgb(231, 231, 231); */
 
 .secondary-dropdown {
   display: none;
@@ -139,7 +138,7 @@ nav {
 }
 
 .secondary-dropdown>li:hover{
-  background-color: rgb(231, 231, 231);;
+  background-color: rgb(211, 211, 211);
 }
 
 
@@ -151,6 +150,16 @@ nav {
 }
 
 
+.iconsize{
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.subsection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* SIGNUP SECTION */
 

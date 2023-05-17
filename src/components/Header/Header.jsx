@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/logo.png";
+import { AiOutlineDown, AiOutlineRight } from 'react-icons/ai';
+
 const Header = () => {
 	
 
@@ -16,10 +18,14 @@ const Header = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/" className="dropdown">Courses v</a>
+          <a href="/" className="dropdown">Courses <AiOutlineDown className="iconsize"/></a>
           <ul className="primary-dropdown">
             <li>
-              <a href="/">Boards &gt;</a>
+              <div className="subsection">
+                <a href="/">Boards</a>
+                <AiOutlineRight className="iconsize"/>
+              </div>
+              
               <ul className="secondary-dropdown">
                 <li>
                   <a href="/">CBSE</a>
@@ -33,7 +39,10 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <a href="/">Competitive Exams &gt;</a>
+            <div className="subsection">
+                <a href="/">Competitive Exams</a>
+                <AiOutlineRight className="iconsize"/>
+              </div>
               <ul className="secondary-dropdown">
                 <li>
                   <a href="/">WBJEE</a>
