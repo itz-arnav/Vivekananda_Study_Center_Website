@@ -18,7 +18,10 @@ const Header = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/" className="dropdown">Courses <AiOutlineDown className="iconsize"/></a>
+          <div className="navDivWithIcon">
+          <a href="/" className="dropdown">Courses</a>
+          <AiOutlineDown className="iconsize"/>
+          </div>
           <ul className="primary-dropdown">
             <li>
               <div className="subsection">

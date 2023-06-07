@@ -1,6 +1,6 @@
 .footerContainer{
     background-color: #333;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@
 /* Link Section */
 
 .linkSection{
-    width: 90%;
+    width: 99%;
     display: grid;
     grid-template-columns: 40% 15% 15% 30%;
     gap: 0.5rem;
@@ -138,6 +138,10 @@
     margin-top: 1.5rem;
 }
 
+.getInTouch{
+    width: 100%;
+}
+
 .emailSubmitSection{
     display: flex;
     align-items: center;
@@ -145,11 +149,16 @@
     background-color: #fff;
     border-radius: 5rem;
     width: 90%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     margin-top: 1.5rem;
+}
+
+.textSection{
+    display: flex;
+    align-items: center;
 }
 
 .emailMailIcon{
@@ -169,7 +178,7 @@
 }
 
 .emailbtn{
-    background-color: rgb(104, 85, 224);
+    background-color: rgb(104, 85, 224) !important;
     border-radius: 5rem;
     display: flex;
     align-items: center;
