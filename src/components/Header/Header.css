@@ -139,7 +139,7 @@ nav {
 .primary-dropdown {
   display: none;
   position: absolute;
-  top: 105%;
+  top: 100%;
   left: -60%;
   background-color: #EEEFFD;
   min-width: 200px;
