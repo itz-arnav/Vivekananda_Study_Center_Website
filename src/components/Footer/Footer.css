@@ -1,5 +1,5 @@
 .footerContainer{
-    background-color: #333;
+    background-color: #5B61EB;
     width: 100%;
     display: flex;
     align-items: center;
@@ -53,6 +53,7 @@
 .footerHr{
     color: #fff;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 
@@ -114,15 +115,18 @@
 .titleName{
     padding-bottom: 0.8rem;
     font-size: 1.15rem;
+    font-weight: 500;
 }
 
 .footerLink{
     text-decoration: none;
     color: #fff;
     font-size: 0.8rem;
+    position: relative;
 }
+
 .footerLink:hover{
-    color: rgb(104, 85, 224);;
+    font-weight: 700;
 }
 
 
@@ -135,7 +139,7 @@
 .normalText{
     font-size: 0.8rem;
     font-weight: 400;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .getInTouch{
@@ -178,7 +182,7 @@
 }
 
 .emailbtn{
-    background-color: rgb(104, 85, 224) !important;
+    background-color: #5B61EB !important;
     border-radius: 5rem;
     display: flex;
     align-items: center;
@@ -194,7 +198,7 @@
 }
 
 .emailbtn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .socialIconSection{
@@ -212,6 +216,5 @@
 }
 
 .socialIconLogo:hover{
-    color: rgb(104, 85, 224);
     transform: scale(1.2);
 }
