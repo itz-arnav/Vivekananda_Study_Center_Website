@@ -70,3 +70,129 @@
     left: 0;
     width: 100%;
 }
+
+.courseContainer>section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10%; /* Top-bottom, Left-right margins */
+}
+
+.courseContainer>section>.courseContent{
+    flex: 0 0 calc(33.33% - 2rem); /* adjust this as per your requirement */
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;border-radius: 0.7rem;
+    box-shadow: 0px 10px 17px -4px rgba(0,0,0,0.05);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dataSection{
+    margin-top: 1rem;
+    padding: 0.1rem 0.6rem;
+}
+
+.dataSection>h2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.detailSection{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.ratingSection{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.ratingValue{
+    font-weight: 700;
+    color: #777;
+}
+
+.stars{
+    display: flex;
+    gap: 0.1rem;
+    font-size: 0.9rem;
+    color: rgb(247, 192, 54);
+}
+
+.durationSection{
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #5B61EB;
+}
+
+.durationValue{
+    color: #777;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.dataSection hr{
+    color: #5B61EB;
+    margin-bottom: 0.5rem;
+}
+
+.priceSection{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+}
+
+.priceIcon{
+    font-size: 1rem;
+}
+
+.priceValue{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+.currentPrice{
+    color: #777;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: rgb(10, 148, 10);
+    font-weight: 700;
+}
+
+.oldPrice{
+    color: rgb(222, 52, 91);
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.oldPrice:after{
+    content: "";
+    position: absolute;
+    border: 1px solid rgb(222, 52, 91);
+    top: 50%;
+    width: 110%;
+}
+
+.priceSection button.buyNowButton{
+    background-color: #5B61EB;
+    color: #fff;
+    border-radius: 0.2rem;
+    font-weight: 600;
+}
