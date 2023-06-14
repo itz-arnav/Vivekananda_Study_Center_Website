@@ -32,16 +32,59 @@ const Header = () => {
 									</a>
 									<ul className="secondary-dropdown">
 										<li>
-											<a href="/">CBSE</a>
+											<a className="subsection" href="/">
+												<span>CBSE</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">CLASS VI</a></li>
+												<li><a href="#">CLASS VII</a></li>
+												<li><a href="#">CLASS VIII</a></li>
+												<li><a href="#">CLASS IX</a></li>
+												<li><a href="#">CLASS X</a></li>
+												<li><a href="#">CLASS XI</a></li>
+												<li><a href="#">CLASS XII</a></li>
+											</ul>
 										</li>
 										<li>
-											<a href="/">ICSE/ISC</a>
+											<a className="subsection" href="/">
+												<span>ICSE/ISC</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">CLASS VI</a></li>
+												<li><a href="#">CLASS VII</a></li>
+												<li><a href="#">CLASS VIII</a></li>
+												<li><a href="#">CLASS IX</a></li>
+												<li><a href="#">CLASS X</a></li>
+												<li><a href="#">CLASS XI</a></li>
+												<li><a href="#">CLASS XII</a></li>
+											</ul>
 										</li>
 										<li>
-											<a href="/">WBBSE/WBSCHSE</a>
+											<a className="subsection" href="/">
+												<span>WBBSE/WBCHSE</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">CLASS VI</a></li>
+												<li><a href="#">CLASS VII</a></li>
+												<li><a href="#">CLASS VIII</a></li>
+												<li><a href="#">CLASS IX</a></li>
+												<li><a href="#">CLASS X</a></li>
+												<li><a href="#">CLASS XI</a></li>
+												<li><a href="#">CLASS XII</a></li>
+											</ul>
 										</li>
 										<li>
-											<a href="/">Foundation</a>
+											<a className="subsection" href="/">
+												<span>FOUNDATION</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">CLASS IX & X</a></li>
+												<li><a href="#">CLASS XI & XII</a></li>
+											</ul>
 										</li>
 									</ul>
 								</li>
@@ -51,14 +94,39 @@ const Header = () => {
 										<AiOutlineRight className="iconsize" />
 									</a>
 									<ul className="secondary-dropdown">
-										<li>
-											<a href="/">JEE</a>
+									<li>
+											<a className="subsection" href="/">
+												<span>JEE</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">PHYSICS</a></li>
+												<li><a href="#">CHEMISTRY</a></li>
+												<li><a href="#">MATHEMATICS</a></li>
+											</ul>
 										</li>
 										<li>
-											<a href="/">NEET</a>
+											<a className="subsection" href="/">
+												<span>NEET</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">PHYSICS</a></li>
+												<li><a href="#">CHEMISTRY</a></li>
+												<li><a href="#">BIOLOGY</a></li>
+											</ul>
 										</li>
 										<li>
-											<a href="/">JEE - NEET (JEET)</a>
+											<a className="subsection" href="/">
+												<span>JEE - NEET (JEET)</span>
+												<AiOutlineRight className="iconsize" />
+											</a>
+											<ul className="secondary-dropdown">
+												<li><a href="#">PHYSICS</a></li>
+												<li><a href="#">CHEMISTRY</a></li>
+												<li><a href="#">MATHEMATICS</a></li>
+												<li><a href="#">BIOLOGY</a></li>
+											</ul>
 										</li>
 										<li>
 											<a href="/">KVPY</a>
