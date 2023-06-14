@@ -1,5 +1,6 @@
 .head{
     align-content: center;
+    margin-bottom: 1rem;
 }
 
 .p1{
@@ -119,11 +120,12 @@ article {
   
   .articles {
     display: grid;
-    max-width: 1200px;
+    max-width: 1300px;
     margin-inline: auto;
     padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 24px;
+    grid-template-rows: auto;
   }
   
   @media screen and (max-width: 960px) {
