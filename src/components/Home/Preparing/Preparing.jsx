@@ -19,7 +19,7 @@ const Preparing = () => {
 				<input type="radio" name="slider" id="icse" />
 				<input type="radio" name="slider" id="wbse" />
 				<input type="radio" name="slider" id="jee_neet" />
-				<input type="radio" name="slider" id="kvpy" />
+				{/* <input type="radio" name="slider" id="kvpy" /> */}
 
 				<nav>
 					<label htmlFor="cbse" className="cbse">
@@ -34,12 +34,13 @@ const Preparing = () => {
 					<label htmlFor="jee_neet" className="jee_neet">
 						JEE/NEET
 					</label>
-					<label htmlFor="kvpy" className="kvpy">
+					{/* <label htmlFor="kvpy" className="kvpy">
 						KVPY
-					</label>
+					</label> */}
 				</nav>
 
 				<section>
+				{/* CBSE */}
 					<div className="courseContent cbse">
 						<img src={courseImage} alt="courseImage" />
 						<div className="dataSection">
@@ -942,7 +943,7 @@ const Preparing = () => {
 						</div>
 					</div>
 					{/* KVPY */}
-					<div className="courseContent kvpy">
+					{/* <div className="courseContent kvpy">
 						<img src={kvpyImage} alt="courseImage" />
 						<div className="dataSection">
 							<h2>Complete KVPY Course for Class IX</h2>
@@ -1013,7 +1014,7 @@ const Preparing = () => {
                                 <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</section>
 			</div>
 		</div>
