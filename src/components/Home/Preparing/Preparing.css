@@ -76,6 +76,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 10%; /* Top-bottom, Left-right margins */
+    
 }
 
 .courseContainer>section>.courseContent{
@@ -88,6 +89,7 @@
 
     display: flex;
     flex-direction: column;
+    transition: all 400ms ease-in-out;
 }
 
 .dataSection{
@@ -195,4 +197,25 @@
     color: #fff;
     border-radius: 0.2rem;
     font-weight: 600;
+}
+
+
+#icse:not(:checked) ~ section>.icse{
+    display: none;
+}
+
+#cbse:not(:checked) ~ section>.cbse{
+    display: none;
+}
+
+#wbse:not(:checked) ~ section>.wbse{
+    display: none;
+}
+
+#jee_neet:not(:checked) ~ section>.jee_neet{
+    display: none;
+}
+
+#kvpy::not(:checked) ~ section>.kvpy{
+    display: none;
 }
