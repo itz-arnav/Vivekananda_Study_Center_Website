@@ -7,7 +7,7 @@ import kvpyImage from "../../../assets/kvpy.png";
 
 import { BiRupee } from 'react-icons/bi';
 import { AiFillStar, AiFillClockCircle } from 'react-icons/ai';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Preparing = () => {
 	return (
