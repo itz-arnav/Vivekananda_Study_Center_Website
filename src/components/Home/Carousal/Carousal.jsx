@@ -5,7 +5,7 @@ const Carousal =()=> {
 <div>
   <div className="carousel">
     <ul className="slides">
-      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <input type="radio" name="radio-buttons" id="img-1" defaultChecked/>
       <li className="slide-container">
         <div className="slide-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg"/>
