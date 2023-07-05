@@ -5,6 +5,7 @@ import Carousal from './Carousal/Carousal';
 import Preparing from './Preparing/Preparing';
 import Our_Product from './Our_Product/Our_Product';
 import Contact from './Contact/Contact';
+import { Feature } from './Feature/Feature';
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <Carousal/>
       <Preparing />
       <Our_Product/>
+      <Feature/>
       <Contact/>
       <Footer />
     </div>
