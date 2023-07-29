@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/logo.png";
 import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
@@ -94,7 +95,7 @@ const Header = () => {
 										<AiOutlineRight className="iconsize" />
 									</a>
 									<ul className="secondary-dropdown">
-									<li>
+										<li>
 											<a className="subsection" href="/">
 												<span>JEE</span>
 												<AiOutlineRight className="iconsize" />
@@ -147,8 +148,12 @@ const Header = () => {
 					</ul>
 				</div>
 				<div className="signupSection">
-					<button className="reg">Sign Up</button>
-					<button className="log">Login</button>
+					<Link to="/sign">
+						<button className="reg">Sign Up</button>
+					</Link>
+					<Link to="/sign">
+						<button className="log">Login</button>
+					</Link>
 				</div>
 			</div>
 		</nav>
