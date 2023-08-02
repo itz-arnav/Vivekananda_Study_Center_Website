@@ -1,12 +1,12 @@
 .carousel {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 ul.slides {
     display: block;
     position: relative;
-    height: 600px;
+    height: 450px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -27,11 +27,11 @@ ul.slides input {
 }
 
 
-.slide-container { 
+.slideContainer { 
     display: block; 
 }
 
-.slide-image {
+.slideImage {
     display: block;
     position: absolute;
     width: 100%;
@@ -41,13 +41,13 @@ ul.slides input {
     transition: all .7s ease-in-out;
 }   
 
-.slide-image img {
+.slideImage img {
     width: auto;
     min-width: 100%;
     height: 100%;
 }
 
-.carousel-controls {
+.carouselControls {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,7 +58,7 @@ ul.slides input {
     color: #fff;
 }
 
-.carousel-controls label {
+.carouselControls label {
     display: none;
     position: absolute;
     padding: 0 20px;
@@ -67,27 +67,27 @@ ul.slides input {
     cursor: pointer;
 }
 
-.slide-image:hover + .carousel-controls label{
+.slideImage:hover + .carouselControls label{
     opacity: 0.7;
 }
 
-.carousel-controls label:hover {
+.carouselControls label:hover {
     opacity: 1;
 }
 
-.carousel-controls .prev-slide {
+.carouselControls .prevSlide {
     width: 49%;
     text-align: left;
     left: 0;
 }
 
-.carousel-controls .next-slide {
+.carouselControls .nextSlide {
     width: 49%;
     text-align: right;
     right: 0;
 }
 
-.carousel-dots {
+.carouselDots {
     position: absolute;
     left: 0;
     right: 0;
@@ -96,7 +96,7 @@ ul.slides input {
     text-align: center;
 }
 
-.carousel-dots .carousel-dot {
+.carouselDots .carouselDot {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -107,21 +107,21 @@ ul.slides input {
     cursor: pointer;
 }
 
-input:checked + .slide-container .slide-image {
+input:checked + .slideContainer .slideImage {
     opacity: 1;
     transform: scale(1);
     transition: opacity 1s ease-in-out;
 }
 
-input:checked + .slide-container .carousel-controls label {
+input:checked + .slideContainer .carouselControls label {
      display: block; 
 }
 
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3{
+input#img-1:checked ~ .carouselDots label#img-dot-1,
+input#img-2:checked ~ .carouselDots label#img-dot-2,
+input#img-3:checked ~ .carouselDots label#img-dot-3{
 	opacity: 1;
 }
 
 
-input:checked + .slide-container .nav label { display: block; }
+input:checked + .slideContainer .nav label { display: block; }

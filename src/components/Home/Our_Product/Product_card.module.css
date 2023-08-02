@@ -1,0 +1,84 @@
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%; /* Top-bottom, Left-right margins */
+  }
+  
+  .articles>article{
+    flex: 0 0 calc(33.33% - 3em); /* adjust this as per your requirement */
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* apply additional styles here */
+    border-radius: 0.7rem;
+    box-shadow: 0px 10px 17px -4px rgba(0,0,0,0.05);
+    cursor: pointer;
+  }
+  
+  figure{
+    height: 16rem;
+    border-radius: 1rem;
+  }
+  
+  figure img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius:  0.7rem;
+    border-top-right-radius:  0.7rem;
+  }
+  
+  .articleBody{
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .articleBody>h2{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .articleBody>p{
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .articleBody a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.75rem;
+    background-color: #5B61EB;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .greater{
+    margin-left: 0.4rem;
+  }
+  
+  .articleBody a:hover{
+    transform: scale(1.05);
+    transition: all 300ms ease-in-out;
+  }
+  
+  .articles>article:hover h2{
+    color: #5B61EB;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .articles>article:hover{
+    box-shadow: 0px 10px 25px 2px rgba(0,0,0,0.1);
+    transition: all 300ms ease-in-out;
+  }
+  
