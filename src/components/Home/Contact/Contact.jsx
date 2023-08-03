@@ -1,77 +1,77 @@
 import React from "react";
-import "./Contact.css";
+import css from "../Contact/Contact.module.css";
 const Contact = () => {
 	return (
-		<div className="contactContainer">
-			<h2 className="titleContact">Contact Us</h2>
-			<div className="formContainer">
-				<form name="contact" className="contact-inform form">
-					<div className="oneSection">
-						<div className="form-control">
+		<div className={css.contactContainer}>
+			<h2 className={css.titleContact}>Contact Us</h2>
+			<div className={css.formContainer}>
+				<form name="contact" className={`${css.contactInform} ${css.form}`}>
+					<div className={css.oneSection}>
+						<div className={css.formControl}>
 							<input
 								type="text"
 								name="firstname"
-								className="form-input"
+								className={css.formInput}
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="firstname" className="form-label">
+							<label htmlFor="firstname" className={css.formLabel}>
 								First Name
 							</label>
 						</div>
-						<div className="form-control">
+						<div className={css.formControl}>
 							<input
 								type="text"
 								name="lastname"
-								className="form-input"
+								className={css.formInput}
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="firstname" className="form-label">
+							<label htmlFor="firstname" className={css.formLabel}>
 								Last Name
 							</label>
 						</div>
 					</div>
 
-					<div className="oneSection">
-						<div className="form-control">
+					<div className={css.oneSection}>
+						<div className={css.formControl}>
 							<input
 								type="email"
 								name="email"
-								className="form-input"
+								className={css.formInput}
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="email" className="form-label">
+							<label htmlFor="email" className={css.formLabel}>
 								Email
 							</label>
 						</div>
-						<div className="form-control">
+						<div className={css.formControl}>
 							<input
 								type="number"
 								name="phoneNumber"
-								className="form-input"
+								className={css.formInput}
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="phoneNumber" className="form-label">
+							<label htmlFor="phoneNumber" className={css.formLabel}>
 								Phone Number
 							</label>
 						</div>
 					</div>
 
-					<div className="form-control">
+					<div className={css.formControl}>
 						<textarea
 							name="message"
-							className="form-input"
+							className={css.formInput}
 							placeholder="none"
 							required
 						/>
-						<label htmlFor="message" className="form-label">
+						<label htmlFor="message" className={css.formLabel}>
 							Message
 						</label>
 					</div>
-					<button type="submit" className="submitButton">
+					<button type="submit" className={css.submitButton}>
 						Send Message
 					</button>
 				</form>
