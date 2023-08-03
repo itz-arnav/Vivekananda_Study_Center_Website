@@ -1,4 +1,4 @@
-import "./Preparing.css";
+import css from"../Preparing/Preparing.module.css";
 import courseImage from "../../../assets/5353134.jpg";
 import icseImage from "../../../assets/icse.jpg";
 import wbseImage from "../../../assets/wbbse.png";
@@ -11,27 +11,27 @@ import { Link } from 'react-router-dom';
 
 const Preparing = () => {
 	return (
-		<div className="preparingContainer">
+		<div className={css.preparingContainer}>
 			<h2>I am Preparing For</h2>
 			<p>We have a variety of courses to choose from</p>
-			<div className="courseContainer">
-				<input type="radio" name="slider" id="cbse" defaultChecked />
-				<input type="radio" name="slider" id="icse" />
-				<input type="radio" name="slider" id="wbse" />
-				<input type="radio" name="slider" id="jee_neet" />
+			<div className={css.courseContainer}>
+				<input type="radio" name="slider" id={css.cbse} defaultChecked />
+				<input type="radio" name="slider" id={css.icse} />
+				<input type="radio" name="slider" id={css.wbse} />
+				<input type="radio" name="slider" id={css.jeeNeet} />
 				{/* <input type="radio" name="slider" id="kvpy" /> */}
 
 				<nav>
-					<label htmlFor="cbse" className="cbse">
+					<label htmlFor={css.cbse} className={css.cbse}>
 						CBSE
 					</label>
-					<label htmlFor="icse" className="icse">
+					<label htmlFor={css.icse} className={css.icse}>
 						ICSE/ISC
 					</label>
-					<label htmlFor="wbse" className="wbse">
+					<label htmlFor={css.wbse} className={css.wbse}>
 						WBSSE/WBCHSE
 					</label>
-					<label htmlFor="jee_neet" className="jee_neet">
+					<label htmlFor={css.jeeNeet} className={css.jeeNeet}>
 						JEE/NEET
 					</label>
 					{/* <label htmlFor="kvpy" className="kvpy">
@@ -41,14 +41,14 @@ const Preparing = () => {
 
 				<section>
 				{/* CBSE */}
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class VI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -56,35 +56,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class VII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -92,35 +92,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class VIII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -128,35 +128,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class IX</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -164,35 +164,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class X</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -200,35 +200,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class XI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -236,35 +236,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent cbse">
+					<div className={`${css.courseContent} ${css.cbse}`}>
 						<img src={courseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete Course for Class XII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -272,35 +272,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class VI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -308,35 +308,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class VII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -344,35 +344,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class VII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -380,35 +380,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class IX</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -416,35 +416,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class X</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -452,35 +452,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class XI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -488,35 +488,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent icse">
+					<div className={`${css.courseContent} ${css.icse}`}>
 						<img src={icseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete CISCE Course for Class XII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -524,35 +524,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class VI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -560,35 +560,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class VII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -596,35 +596,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class VIII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -632,35 +632,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class IX</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -668,35 +668,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class X</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -704,35 +704,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class XI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -740,35 +740,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent wbse">
+					<div className={`${css.courseContent} ${css.wbse}`}>
 						<img src={wbseImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete WBBSE Course for Class XII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -776,36 +776,36 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
 
-					<div className="courseContent jee_neet">
+					<div className={`${css.courseContent} ${css.jeeNeet}`}>
 						<img src={jeeImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete JEE Course for Class XI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -813,35 +813,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent jee_neet">
+					<div className={`${css.courseContent} ${css.jeeNeet}`}>
 						<img src={jeeImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete JEE Course for Class XII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -849,35 +849,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent jee_neet">
+					<div className={`${css.courseContent} ${css.jeeNeet}`}>
 						<img src={jeeImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete NEET Course for Class XI</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -885,35 +885,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
-					<div className="courseContent jee_neet">
+					<div className={`${css.courseContent} ${css.jeeNeet}`}>
 						<img src={jeeImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete NEET Course for Class XII</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -921,36 +921,36 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
 					{/* KVPY */}
 					{/* <div className="courseContent kvpy">
 						<img src={kvpyImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete KVPY Course for Class IX</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -958,35 +958,35 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div>
 					<div className="courseContent kvpy">
 						<img src={kvpyImage} alt="courseImage" />
-						<div className="dataSection">
+						<div className={css.dataSection}>
 							<h2>Complete KVPY Course for Class X</h2>
-							<div className="detailSection">
-                                <div className="ratingSection">
-                                    <p className="ratingValue">4.9</p>
-                                    <div className="stars">
+							<div className={css.detailSection}>
+                                <div className={css.ratingSection}>
+                                    <p className={css.ratingValue}>4.9</p>
+                                    <div className={css.stars}>
                                         <AiFillStar />
                                         <AiFillStar />
                                         <AiFillStar />
@@ -994,24 +994,24 @@ const Preparing = () => {
                                         <AiFillStar />
                                     </div>
                                 </div>
-                                <div className="durationSection">
+                                <div className={css.durationSection}>
                                     <AiFillClockCircle />
-                                    <p className="durationValue">73.2h</p>
+                                    <p className={css.durationValue}>73.2h</p>
                                 </div>
                             </div>
 							<hr />
-							<div className="priceSection">
-								<div className="priceValue">
-									<div className="currentPrice">
-										<BiRupee className="priceIcon" />
-										<div className="currentPriceValue">499</div>
+							<div className={css.priceSection}>
+								<div className={css.priceValue}>
+									<div className={css.currentPrice}>
+										<BiRupee className={css.priceIcon} />
+										<div className={css.currentPriceValue}>499</div>
 									</div>
-                                    <div className="oldPrice">
-                                    <BiRupee className="priceIcon" />
-										<div className="oldPriceValue">799</div>
+                                    <div className={css.oldPrice}>
+                                    <BiRupee className={css.priceIcon} />
+										<div className={css.oldPriceValue}>799</div>
                                     </div>
 								</div>
-                                <Link to="/"><button className="buyNowButton">Buy Now</button></Link>
+                                <Link to="/"><button className={css.buyNowButton}>Buy Now</button></Link>
 							</div>
 						</div>
 					</div> */}
