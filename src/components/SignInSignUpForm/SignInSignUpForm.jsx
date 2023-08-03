@@ -2,100 +2,100 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faGoogle, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import "./SignInSignUpForm.css";
+import css from '../SignInSignUpForm/SignInSignUpForm.module.css';
 function SignInSignUpForm() {
   const [isSignUp, setIsSignUp] = useState(false);
-
+/*<div className={`container ${isSignUp ? 'sign-up-mode' : ''}`}>*/
   return (
-    <div className={`container ${isSignUp ? 'sign-up-mode' : ''}`}>
-      <div className="forms-container">
-        <div className="signin-signup">
-          <form action="#" className="sign-in-form">
-            <h2 className="title">Sign in</h2>
-            <div className="input-field">
+    <div className={`${css.container} ${isSignUp ? css.signUpMode : ''}`}>
+      <div className={css.formsContainer}>
+        <div className={css.signinSignup}>
+          <form action="#" className={css.signInForm}>
+            <h2 className={css.title}>Sign in</h2>
+            <div className={css.inputField}>
               <FontAwesomeIcon icon={faUser} />
               <input type="text" placeholder="Username" />
             </div>
-            <div className="input-field">
+            <div className={css.inputField}>
               <FontAwesomeIcon icon={faLock} />
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" className="btn solid" />
-            <p className="social-text">Or Sign in with social platforms</p>
-            <div className="social-media">
-              <a href="#" className="social-icon">
+            <input type="submit" value="Login" className={`${css.btn} ${css.solid}`} />
+            <p className={css.socialText}>Or Sign in with social platforms</p>
+            <div className={css.socialMedia}>
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faGoogle} />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
           </form>
-          <form action="#" className="sign-up-form">
-            <h2 className="title">Sign up</h2>
-            <div className="input-field">
+          <form action="#" className={css.signUpForm}>
+            <h2 className={css.title}>Sign up</h2>
+            <div className={css.inputField}>
               <FontAwesomeIcon icon={faUser} />
               <input type="text" placeholder="Username" />
             </div>
-            <div className="input-field">
+            <div className={css.inputField}>
               <FontAwesomeIcon icon={faEnvelope} />
               <input type="email" placeholder="Email" />
             </div>
-            <div className="input-field">
+            <div className={css.inputField}>
               <FontAwesomeIcon icon={faLock} />
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" className="btn" value="Sign up" />
-            <p className="social-text">Or Sign up with social platforms</p>
-            <div className="social-media">
-              <a href="#" className="social-icon">
+            <input type="submit" className={css.btn} value="Sign up" />
+            <p className={css.socialText}>Or Sign up with social platforms</p>
+            <div className={css.socialMedia}>
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faGoogle} />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className={css.socialIcon}>
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
           </form>
         </div>
       </div>
-      <div className="panels-container">
-        <div className="panel left-panel">
-          <div className="content">
+      <div className={css.panelsContainer}>
+        <div className={`${css.panel} ${css.leftPanel}`}>
+          <div className={css.content}>
             <h3>New here ?</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
               ex ratione. Aliquid!
             </p>
-            <button className="btn transparent" id="sign-up-btn" onClick={() => setIsSignUp(true)}>
+            <button className={`${css.btn} ${css.transparent}`} id={css.signUpBtn} onClick={() => setIsSignUp(true)}>
               Sign up
             </button>
           </div>
-          <img src="img/log.svg" className="image" alt="" />
+          <img src="img/log.svg" className={css.image} alt="" />
         </div>
-        <div className="panel right-panel">
-          <div className="content">
+        <div className={`${css.panel} ${css.rightPanel}`}>
+          <div className={css.content}>
             <h3>One of us ?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               laboriosam ad deleniti.
             </p>
-            <button className="btn transparent" id="sign-in-btn" onClick={() => setIsSignUp(false)}>
+            <button className={`${css.btn} ${css.transparent}`} id={css.signInBtn} onClick={() => setIsSignUp(false)}>
               Sign in
             </button>
           </div>
-          <img src="img/register.svg" className="image" alt="" />
+          <img src="img/register.svg" className={css.image} alt="" />
         </div>
       </div>
     </div>
