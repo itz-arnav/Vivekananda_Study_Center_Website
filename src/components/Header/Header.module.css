@@ -33,7 +33,7 @@ nav {
   font-weight: 500;
 }
 
-.nav-links {
+.navLinks {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -44,15 +44,15 @@ nav {
 
 }
 
-.nav-links>li{
+.navLinks>li{
   margin: 0 0.5rem;
 }
-.nav-links li {
+.navLinks li {
   position: relative;
   z-index: 5;
 }
 
-.nav-links li a {
+.navLinks li a {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -69,7 +69,7 @@ nav {
 }
 
 
-.nav-links>li>a:after {    
+.navLinks>li>a:after {    
   bottom: 0;
   content: "";
   display: block;
@@ -80,7 +80,7 @@ nav {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.nav-links>li>a:hover:after { 
+.navLinks>li>a:hover:after { 
   width: 90%; 
 }
 
@@ -88,16 +88,16 @@ nav {
   position: relative;
 }
 
-.dropdown:hover .exams-dropdown {
+.dropdown:hover .examsDropdown {
   display: block;
 }
 
 
-.primary-dropdown li {
+.primaryDropdown li {
   position: relative;
 }
 
-.primary-dropdown li a {
+.primaryDropdown li a {
   width: 100%;
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@ nav {
   color: #000;
 }
 
-.secondary-dropdown li a {
+.secondaryDropdown li a {
   width: 100%;
   display: flex;
   align-items: center;
@@ -121,7 +121,7 @@ nav {
 
 
 
-.nav-links li:hover > ul {
+.navLinks li:hover > ul {
   display: block;
   animation: scaleUp;
   animation-duration: 0.3s;
@@ -136,7 +136,7 @@ nav {
     transform: scale(1);
   }
 }
-.primary-dropdown {
+.primaryDropdown {
   display: none;
   position: absolute;
   top: 100%;
@@ -150,11 +150,11 @@ nav {
   z-index: infinite;
 }
 
-.primary-dropdown>li:hover{
+.primaryDropdown>li:hover{
   background-color: rgba(91, 96, 235, 0.285);
 }
 
-.primary-dropdown li:hover > ul {
+.primaryDropdown li:hover > ul {
   display: block;
   position: absolute;
   top: 0;
@@ -162,7 +162,7 @@ nav {
 }
 
 
-.secondary-dropdown {
+.secondaryDropdown {
   display: none;
   position: absolute;
   top: 0;
@@ -174,12 +174,12 @@ nav {
   padding: 0;
 }
 
-.secondary-dropdown>li:hover{
+.secondaryDropdown>li:hover{
   background-color: rgba(91, 96, 235, 0.285);
 }
 
 
-.secondary-dropdown li:hover > ul {
+.secondaryDropdown li:hover > ul {
   display: block;
   position: absolute;
   top: 0;

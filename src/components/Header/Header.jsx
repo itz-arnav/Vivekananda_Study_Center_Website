@@ -1,43 +1,43 @@
 import { useState } from "react";
-import "./Header.css";
+import css from"../Header/Header.module.css";
 import Logo from "../../assets/logo.png";
 import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
-		<nav className="headerContainer">
-			<div className="headerContent">
-				<div className="leftSection">
-					<div className="imageSection">
-						<img src={Logo} alt="" className="imageIcon" />
+		<nav className={css.headerContainer}>
+			<div className={css.headerContent}>
+				<div className={css.leftSection}>
+					<div className={css.imageSection}>
+						<img src={Logo} alt="" className={css.imageIcon} />
 					</div>
 				</div>
-				<div className="midSection">
-					<ul className="nav-links">
+				<div className={css.midSection}>
+					<ul className={css.navLinks}>
 						<li>
 							<a href="/">Home</a>
 						</li>
 						<li>
-							<div className="navDivWithIcon">
-								<a href="/" className="dropdown">
+							<div className={css.navDivWithIcon}>
+								<a href="/" className={css.dropdown}>
 									Courses
 								</a>
-								<AiOutlineDown className="iconsize" />
+								<AiOutlineDown className={css.iconsize} />
 							</div>
-							<ul className="primary-dropdown">
+							<ul className={css.primaryDropdown}>
 								<li>
-									<a className="subsection" href="/">
+									<a className={css.subsection} href="/">
 										<span>Boards</span>
-										<AiOutlineRight className="iconsize" />
+										<AiOutlineRight className={css.iconsize} />
 									</a>
-									<ul className="secondary-dropdown">
+									<ul className={css.secondaryDropdown}>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>CBSE</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">CLASS VI</a></li>
 												<li><a href="#">CLASS VII</a></li>
 												<li><a href="#">CLASS VIII</a></li>
@@ -48,11 +48,11 @@ const Header = () => {
 											</ul>
 										</li>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>ICSE/ISC</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">CLASS VI</a></li>
 												<li><a href="#">CLASS VII</a></li>
 												<li><a href="#">CLASS VIII</a></li>
@@ -63,11 +63,11 @@ const Header = () => {
 											</ul>
 										</li>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>WBBSE/WBCHSE</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">CLASS VI</a></li>
 												<li><a href="#">CLASS VII</a></li>
 												<li><a href="#">CLASS VIII</a></li>
@@ -78,11 +78,11 @@ const Header = () => {
 											</ul>
 										</li>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>FOUNDATION</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">CLASS IX & X</a></li>
 												<li><a href="#">CLASS XI & XII</a></li>
 											</ul>
@@ -90,39 +90,39 @@ const Header = () => {
 									</ul>
 								</li>
 								<li>
-									<a className="subsection" href="/">
+									<a className={css.subsection} href="/">
 										<span>Competitive Exams</span>
-										<AiOutlineRight className="iconsize" />
+										<AiOutlineRight className={css.iconsize} />
 									</a>
-									<ul className="secondary-dropdown">
+									<ul className={css.secondaryDropdown}>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>JEE</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">PHYSICS</a></li>
 												<li><a href="#">CHEMISTRY</a></li>
 												<li><a href="#">MATHEMATICS</a></li>
 											</ul>
 										</li>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>NEET</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">PHYSICS</a></li>
 												<li><a href="#">CHEMISTRY</a></li>
 												<li><a href="#">BIOLOGY</a></li>
 											</ul>
 										</li>
 										<li>
-											<a className="subsection" href="/">
+											<a className={css.subsection} href="/">
 												<span>JEE - NEET (JEET)</span>
-												<AiOutlineRight className="iconsize" />
+												<AiOutlineRight className={css.iconsize} />
 											</a>
-											<ul className="secondary-dropdown">
+											<ul className={css.secondaryDropdown}>
 												<li><a href="#">PHYSICS</a></li>
 												<li><a href="#">CHEMISTRY</a></li>
 												<li><a href="#">MATHEMATICS</a></li>
@@ -147,12 +147,12 @@ const Header = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="signupSection">
+				<div className={css.signupSection}>
 					<Link to="/sign">
-						<button className="reg">Sign Up</button>
+						<button className={css.reg}>Sign Up</button>
 					</Link>
 					<Link to="/sign">
-						<button className="log">Login</button>
+						<button className={css.log}>Login</button>
 					</Link>
 				</div>
 			</div>
