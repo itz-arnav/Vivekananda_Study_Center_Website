@@ -13,11 +13,11 @@ function SignInSignUpForm() {
           <form action="#" className={css.signInForm}>
             <h2 className={css.title}>Sign in</h2>
             <div className={css.inputField}>
-              <FontAwesomeIcon icon={faUser} />
+              <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faUser} />
               <input type="text" placeholder="Username" />
             </div>
             <div className={css.inputField}>
-              <FontAwesomeIcon icon={faLock} />
+              <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faLock} />
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" className={`${css.btn} ${css.solid}`} />
@@ -40,15 +40,15 @@ function SignInSignUpForm() {
           <form action="#" className={css.signUpForm}>
             <h2 className={css.title}>Sign up</h2>
             <div className={css.inputField}>
-              <FontAwesomeIcon icon={faUser} />
+              <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faUser} />
               <input type="text" placeholder="Username" />
             </div>
             <div className={css.inputField}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faEnvelope} />
               <input type="email" placeholder="Email" />
             </div>
             <div className={css.inputField}>
-              <FontAwesomeIcon icon={faLock} />
+              <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faLock} />
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" className={css.btn} value="Sign up" />
