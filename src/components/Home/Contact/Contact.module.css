@@ -93,28 +93,30 @@
 	border: 2px solid var(--color-blues);
 }
 
-.formInput:focus ~ .form-label {
-	top: -0.75rem;
-	left: 1rem;
-	z-index: 10;
-	font-size: 0.875rem;
-	font-weight: 500;
-	color: var(--color-blues);
-	transition: all 0.2s ease-in-out;
+.formInput:focus ~ .formLabel { 
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 10;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-blues);
+    transition: all 0.2s ease-in-out;
 }
+
+
 
 .formInput:not(:placeholder-shown) {
 	z-index: 9;
 }
 
-.formInput:not(:placeholder-shown):not(:focus) ~ .formLabel {
-	top: -0.75rem;
-	left: 1rem;
-	z-index: 9;
-	font-size: 0.875rem;
-	font-weight: 500;
+.formInput:not(:placeholder-shown):not(:focus) ~ .formLabel { 
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 9;
+    font-size: 0.875rem;
+    font-weight: 500;
     color: #5B61EB;
-	transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .contactInform {
