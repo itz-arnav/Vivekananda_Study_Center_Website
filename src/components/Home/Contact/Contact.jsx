@@ -15,7 +15,7 @@ const Contact = () => {
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="firstname" className={css.formLabel}>
+							<label htmlFor={css.firstname} className={css.formLabel}>
 								First Name
 							</label>
 						</div>
@@ -27,7 +27,7 @@ const Contact = () => {
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="firstname" className={css.formLabel}>
+							<label htmlFor={css.lastname} className={css.formLabel}>
 								Last Name
 							</label>
 						</div>
@@ -42,7 +42,7 @@ const Contact = () => {
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="email" className={css.formLabel}>
+							<label htmlFor={css.email} className={css.formLabel}>
 								Email
 							</label>
 						</div>
@@ -54,7 +54,7 @@ const Contact = () => {
 								placeholder="none"
 								required
 							/>
-							<label htmlFor="phoneNumber" className={css.formLabel}>
+							<label htmlFor={css.phoneNumber} className={css.formLabel}>
 								Phone Number
 							</label>
 						</div>
@@ -67,7 +67,7 @@ const Contact = () => {
 							placeholder="none"
 							required
 						/>
-						<label htmlFor="message" className={css.formLabel}>
+						<label htmlFor={css.message} className={css.formLabel}>
 							Message
 						</label>
 					</div>
