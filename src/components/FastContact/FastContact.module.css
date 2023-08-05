@@ -1,0 +1,120 @@
+#titleTagLine {
+  font-size: 20px;
+}
+.input1 {
+  display: inline; /* Display inputs inline */
+  background-color: #e3e0ca;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 40%;
+  float: left;
+}
+/* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } */
+
+/* form animation starts */
+.form {
+  background: #e3e0ca;
+  opacity: 1;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 1);
+  border-radius: 5px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  left: 0;
+  right: 0;
+  margin-bottom: 30px;
+  border-top: 1px solid #7e2fee;
+
+  /*   z-index: 1; */
+  animation: bounce 3s infinite;
+}
+::-webkit-input-placeholder {
+  font-size: 1.7em;
+}
+
+.title {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 55%;
+}
+.termsConditions {
+  margin: 0 auto 5px 80px;
+}
+
+.pageTitle {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.secondaryTitle {
+  color: grey;
+  font-weight: bold;
+  font-size: 1em;
+  width: 20%;
+}
+.name,
+.phone {
+  display: inline; /* Display inputs inline */
+  background-color: #ebebeb;
+  color: rgb(0, 0, 0);
+  width: calc(38% - 20px);
+  height: 20%;
+}
+.submit {
+  display: inline;
+  width: calc(10% - 5px); /* Matching width with name and phone inputs */
+  color: white;
+  background-color: #5b4eea;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.name:hover,
+.phone:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  height: 25%;
+  transform: translateY(-3px);
+  width: calc(45% - 20px);
+}
+.submit:hover {
+  height: 25%;
+  transform: translateY(-3px);
+  width: calc(15% - 5px);
+}
+
+.formEntry {
+  display: inline; /* Display inputs inline */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, -20px);
+  }
+
+  50% {
+    transform: translate(0, -80px);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+form:hover {
+  animation-play-state: paused;
+}

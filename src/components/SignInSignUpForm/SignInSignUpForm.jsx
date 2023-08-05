@@ -7,7 +7,7 @@ function SignInSignUpForm() {
   const [isSignUp, setIsSignUp] = useState(false);
 /*<div className={`container ${isSignUp ? 'sign-up-mode' : ''}`}>*/
   return (
-    <div className={`${css.container} ${isSignUp ? css.signUpMode : ''}`}>
+    <div className={`${css.container} ${isSignUp ? css.signUpMode : ''}`}> ''   ``
       <div className={css.formsContainer}>
         <div className={css.signinSignup}>
           <form action="#" className={css.signInForm}>
