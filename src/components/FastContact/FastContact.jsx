@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faLock, faEnvelope, faPhone, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faTwitter, faGoogle, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import css from "../FastContact/FastContact.module.css";
 
 const FastContact = () => {
@@ -30,15 +33,18 @@ const FastContact = () => {
           Please fill this form .
         </div>
         <div className={css.input1}>
+        <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faUser} />
           <input
             type="text"
             name="name"
             className={`${css.name} ${css.formEntry}`}
+            pattern="[A-Za-z]*"
             placeholder="Name"
             value={fname}
             onChange={handleUpdatename}
             required
           />
+          <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faPhone} />
           <input
             type="tel"
             name="phone"
@@ -50,7 +56,7 @@ const FastContact = () => {
             required
           />
           <button className={`${css.submit} ${css.formEntry}`} type="submit">
-            Submit
+            <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faPaperPlane} />
           </button>
         </div>
       </form>
