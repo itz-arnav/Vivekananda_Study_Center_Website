@@ -3,10 +3,10 @@
 }
 .input1 {
   display: inline; /* Display inputs inline */
-  background-color: #e3e0ca;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   width: 100%;
-  height: 40%;
+  height: 100%;
   float: left;
 }
 /* .card-item__bg{
@@ -24,7 +24,7 @@
 
 /* form animation starts */
 .form {
-  background: #e3e0ca;
+  background: #ffffff;
   opacity: 1;
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 1);
   border-radius: 5px;
@@ -70,50 +70,52 @@
   display: inline; /* Display inputs inline */
   background-color: #ebebeb;
   color: rgb(0, 0, 0);
-  width: calc(38% - 20px);
-  height: 20%;
+  width: calc(38% - 30px);
+  height: 30%;
 }
 .submit {
   display: inline;
   width: calc(15% - 15px); /* Matching width with name and phone inputs */
   color: white;
-  height:20%;
-  background-color: #5b4eea;
+  height:60%;
+  background-color:#ffffff;
   
 }
 .name:hover,
 .phone:hover {
   box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-  height: 25%;
+  height: 30%;
   transform: translateY(-3px);
-  width: calc(45% - 20px);
+  width: calc(40% - 30px);
 }
 .submit:hover {
-  height: 25%;
+  height: 90%;
   transform: translateY(-3px);
-  width: calc(10% - 10px);
+  width: calc(16% - 15px);
 }
 .fontAwesomeIcon {
     text-align: center;
     line-height: 55px;
     color: #7a7878;
     transition: 0.5s;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-top: 1.1rem;
     margin-left: 1rem;
   }
-  .fontAwesomeIcon button{
+  .fontAwesomeIcon1{
     text-align: center;
     line-height: 55px;
     color: #7a7878;
     transition: 0.5s;
-    font-size: 3rem;
-    margin-top: 1.1rem;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
     margin-left: 1rem;
+    
   }
 
 .formEntry {
   display: inline; /* Display inputs inline */
+  height: auto;
   margin: 10px;
   padding: 10px;
   border-radius: 2px;

@@ -6,13 +6,20 @@ import css from "../FastContact/FastContact.module.css";
 
 const FastContact = () => {
   const [fname, setFname] = useState("");
-  const [phone, setPhone] = useState();
+  const [phone, setPhone] = useState("");
 
   const handleUpdatename = (e) => {
-    setFname(e.target.value);
+    var letter=/^[A-Za-z ]*$/;
+    
+    if(e.target.value.match(letter)){
+    setFname(e.target.value.toUpperCase().substr(0,50));
+    }
   };
   const handleUpdatephone = (e) => {
-    setPhone(e.target.value);
+    var num=/^[0-9]*$/;
+    if(e.target.value.match(num))
+        setPhone(e.target.value.substr(0,10));
+    
   };
 
   const handleSubmit = (e) => {
@@ -38,7 +45,7 @@ const FastContact = () => {
             type="text"
             name="name"
             className={`${css.name} ${css.formEntry}`}
-            pattern="[A-Za-z]*"
+            pattern="[A-Za-z ]*"
             placeholder="Name"
             value={fname}
             onChange={handleUpdatename}
@@ -55,8 +62,9 @@ const FastContact = () => {
             onChange={handleUpdatephone}
             required
           />
+          
           <button className={`${css.submit} ${css.formEntry}`} type="submit">
-            <FontAwesomeIcon className={css.fontAwesomeIcon} icon={faPaperPlane} />
+          <FontAwesomeIcon className={css.fontAwesomeIcon1} icon={faPaperPlane}  type="submit"/>
           </button>
         </div>
       </form>
