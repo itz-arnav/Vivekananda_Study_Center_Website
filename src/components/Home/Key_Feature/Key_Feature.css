@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
+.cards {
+	font-family: "Spline Sans", sans-serif;
+	line-height: 1.5;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem;
+	width: 90%;
+	max-width: 1000px;
+	margin: 10vh auto;
+}
+
+.card {
+	border-radius: 16px;
+	box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
+	max-width: 300px;
+}
+
+.information {
+	background-color: var(--c-white);
+	padding: 1.5rem;
+
+	.tag {
+		display: inline-block;
+		background-color: var(--c-titan-white);
+		color: var(--c-indigo);
+		font-weight: 600;
+		font-size: 0.875rem;
+		padding: 0.5em 0.75em;
+		line-height: 1;
+		border-radius: 6px;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.title {
+		font-size: 1.5rem;
+		color: var(--c-void);
+		line-height: 1.25;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.info {
+		color: var(--c-charcoal);
+		& + * {
+			margin-top: 1.25rem;
+		}
+	}
+
+	
+	.details {
+		display: flex;
+		gap: 1rem;
+		div {
+			padding: .75em 1em;
+			background-color: var(--c-titan-white);
+			border-radius: 8px;
+			display: flex;
+			flex-direction: column-reverse;
+			gap: .125em;
+			flex-basis: 50%;
+		}
+		
+		dt {
+			font-size: .875rem;
+			color: var(--c-cold-purple);
+		}
+		
+		dd {
+			color: var(--c-indigo);
+			font-weight: 600;
+			font-size: 1.25rem;
+		}
+	}
+}
+
+
+.plan {
+	padding: 10px;
+	background-color: var(--c-white);
+	color: var(--c-del-rio);
+	
+	strong {
+		font-weight: 600;
+		color: var(--c-coffee);
+	}
+
+
+	
+	.title {
+		font-weight: 600;
+		font-size: 1.25rem;
+		color: var(--c-coffee);
+		& + * {
+			margin-top: .75rem;
+		}
+	}
+	
+	.info {
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+	
+	
+
+	
+
+	
+	
+}
