@@ -8,12 +8,24 @@ const courseData = {
     "cbse": {
         "data": [
             {
-                "class": 6,
-                "name": "CBSE Class 6 Course",
+                "name": "Complete Course for CBSE VI",
                 "currentPrice": 942,
                 "oldPrice": 1413,
                 "courseDuration": 99,
-                "slug": "cbse-class-6-course"
+                "slug": "cbse-class-6-course",
+                "image" : cbseImage,
+                batchDetails: [
+                    "Complete JEE Syllabus will be covered",
+                    "We will cover Physics, Chemistry, Mathematics.",
+                    "6 Days scheduled classes will be held.",
+                    "Classes will be “Live”, per day 3 classes will be held.",
+                    "PDF Notes of each Class will be uploaded on PW App",
+                    "Daily Practice Problems with their Video Solution in Quiz format",
+                    "Dedicated faculties for solving doubts through best-in-class doubt engine.",
+                    "Peer to peer doubt solving will be provided.",
+                    "Scheduled tests will be held according to the planner.",
+                    "The complete course will be accessible to all the students until the JEE 2024 Exams"
+                ]
             },
             {
                 "class": 7,

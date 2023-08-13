@@ -1,0 +1,150 @@
+.courseContainer {
+    width: 100%;
+    min-height: 40rem;
+}
+
+.courseDescription {
+    min-height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-end;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(98, 103, 105, 1) 100%);
+    width: 100%;
+    color: #fff;
+}
+
+.courseTextDetailsContainer {
+    padding-left: 3rem;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.courseTextDetailsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.courseTextName {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.courseMockTextPrice {
+    color: #888;
+    font-size: 1.1rem;
+}
+
+.courseTextPriceSection {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.courseCurrentPrice {
+    font-size: 2rem;
+}
+
+.coursePastPrice {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #ddd;
+}
+
+.courseImageDetails {
+    flex: 2;
+}
+
+
+
+.batchDetailsSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+.batchDetailHeading{
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.batchDetailsList {
+    display: inline-block;
+    list-style: none;
+    margin-left: 1.8em;
+}
+
+.listItemBatchDetails {
+    margin-top: 0.5rem;
+    position: relative;
+    list-style-type: none; /* This removes the default bullet points */
+}
+
+.listItemBatchDetails::before {
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-left: -1.8em;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../../public/img/tick.svg"); 
+}
+
+.downloadLectureContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.downloadLecturePlan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #5B61EB;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 16rem;
+    height: 3.5rem;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.downloadLecturePlan:hover{
+    transform: scale(1.01);
+    background-color: #49bda6;
+}
+
+.faqDetailsSection{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.faqDetailText{
+    margin-left: 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.AccordionSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
