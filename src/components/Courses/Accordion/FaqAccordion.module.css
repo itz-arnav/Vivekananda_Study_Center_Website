@@ -1,0 +1,10 @@
+/* FaqAccordion.module.css */
+
+/* This targets the hover state of the accordion item */
+.accordion {
+  width: 93%;
+}
+
+button:hover{
+  transform: none;
+}
